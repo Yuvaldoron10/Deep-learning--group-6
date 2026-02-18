@@ -13,6 +13,8 @@ We extend the original model from **2 input images to 4 input images** and syste
 The final model improves perceptual quality (SSIM, VIFF) while keeping similar PSNR compared to the original IFCNN baseline.
 
 ## Project Structure
+
+
 ├── models/ # All network architectures
 │ ├── IFCNN model.py # Original baseline architecture
 │ ├── IFCNN with adjustments.py
@@ -40,6 +42,7 @@ The final model improves perceptual quality (SSIM, VIFF) while keeping similar P
 └── data-image/ # Dataset structure (not included)
 ├── multi focus/ # Input images per scene
 └── Ground_truth/ # Reference images
+
 
 
 
