@@ -616,12 +616,6 @@ def main():
         weight_decay=WEIGHT_DECAY
     )
 
-    # optimizer = torch.optim.Adam(
-    #     filter(lambda p: p.requires_grad, model.parameters()),
-    #     lr=LR,
-    #     weight_decay=WEIGHT_DECAY
-    # )
-
 
 
     import math
