@@ -10,7 +10,7 @@ import torchvision.models as models
 class ConvBlock(nn.Module):
     def __init__(self, inplane, outplane):
         super(ConvBlock, self).__init__()
-        assert inplane == outplane, "skip identity דורש inplane == outplane"
+        assert inplane == outplane, "skip identity inplane == outplane"
         self.padding = (1, 1, 1, 1)
 
         # ReLU
