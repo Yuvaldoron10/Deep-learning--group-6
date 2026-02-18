@@ -14,34 +14,33 @@ The final model improves perceptual quality (SSIM, VIFF) while keeping similar P
 
 ## Project Structure
 
+### models
+All network architectures:
+- `IFCNN model.py` – original baseline
+- `IFCNN with adjustments.py`
+- `improved_model.py` – final proposed model
+- `model2_conv1.py` – conv1 fine-tuning experiment
+- `model3_activation.py` – activation experiments
+- `model4_residual.py` – early residual blocks
+- `model5_deeper.py` – post-fusion refinement
 
-├── models/ # All network architectures
-│ ├── IFCNN model.py # Original baseline architecture
-│ ├── IFCNN with adjustments.py
-│ ├── improved_model.py # Final proposed model
-│ ├── model2_conv1.py # Conv1 fine-tuning experiment
-│ ├── model3_activation.py # Activation function experiments
-│ ├── model4_residual.py # Early residual blocks
-│ └── model5_deeper.py # Post-fusion residual refinement
+### train and val
+Training scripts:
+- `train+val original model.py`
+- `train+val improved model.py`
 
-├── train and val/ # Training scripts
-│ ├── train+val original model.py
-│ └── train+val improved model.py
+### test
+Evaluation scripts:
+- `test_original.py`
+- `test_improved_model.py`
 
-├── test/ # Evaluation scripts
-│ ├── test_original.py
-│ └── test_improved_model.py
+### results_test
+Example qualitative outputs:
+- `results_original/`
+- `results_improved/`
 
-├── results_test/ # Example qualitative outputs
-│ ├── results_original/
-│ └── results_improved/
-
-├── weights/ # Model weights
-│ └── IFCNN-MAX.pth # Baseline weights from the original paper
-
-└── data-image/ # Dataset structure (not included)
-├── multi focus/ # Input images per scene
-└── Ground_truth/ # Reference images
+### weights
+- `IFCNN-MAX.pth` – baseline weights from the original paper
 
 
 
